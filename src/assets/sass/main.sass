@@ -53,9 +53,12 @@ p, span
 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4))
 .header__info-block
 	position: absolute
-	top: 25%
+	// top: 25%
 	width: 100%
+	height: 100%
 	margin: 0 auto
+	display: flex
+	align-items: center
 .header__manage
 	display: block
 	text-align: center
@@ -99,8 +102,8 @@ p, span
 		padding-right: 10px
 		font-size: 14px
 		line-height: 20px
-	.header__info-block
-		top: 25%
+	// .header__info-block
+	// 	top: 25%
 	.header__link-excursions, .header__link-test
 		padding: 0px 30px
 @media screen and (min-width: 576px)
@@ -117,8 +120,8 @@ p, span
 		padding-right: 10px
 		font-size: 14px
 		line-height: 20px
-	.header__info-block
-		top: 11%
+	// .header__info-block
+	// 	top: 11%
 	.header__link-excursions, .header__link-test
 		padding: 0px 30px
 @media screen and (min-width: 768px)
@@ -137,22 +140,22 @@ p, span
 		font-weight: 200
 		padding-left: 50px
 		padding-right: 50px
-	.header__info-block
-		top: 10%
+	// .header__info-block
+	// 	top: 10%
 	.header__link-excursions, .header__link-test
 		padding: 0px 60px
 @media screen and (min-width: 992px)
 	.header__background
 		height: 780px
 		min-height: 680px
-	.header__info-block
-		top: 35%
+	// .header__info-block
+	// 	top: 35%
 	.main-title
 		padding-left: 10%
 		padding-right: 10%
 @media screen and (min-width: 1200px)
-	.header__info-block
-		top: 25%
+	// .header__info-block
+	// 	top: 25%
 	.main-title
 		font-size: 72px
 	.sub-title
@@ -266,6 +269,10 @@ p, span
 		height: 233px
 		min-height: auto
 		max-height: auto
+	.test-block__title
+		font-size: 30px
+	.test-block__sub-title
+		font-size: 20px
 	.list-excursions__test-block
 		padding:
 			bottom: 90px
@@ -278,6 +285,10 @@ p, span
 		height: auto
 		min-height: 233px
 		max-height: 358px
+	.test-block__title
+		font-size: 30px
+	.test-block__sub-title
+		font-size: 20px
 	.list-excursions__test-block
 		padding:
 			bottom: 90px
@@ -311,6 +322,10 @@ p, span
 		height: auto
 		min-height: 215px
 		max-height: 215px
+	.test-block__title
+		font-size: 44px
+	.test-block__sub-title
+		font-size: 22px
 @media screen and (min-width: 768px)
 	.variants__item-img
 		height: auto
@@ -323,6 +338,87 @@ p, span
 		max-height: 300px
 
 /* advantages style */
+.advantages
+	width: 100%
+	height: 100%
+.advantages__background
+	background-image: url(../images/5ca654a439c64380fab7.jpg)
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+	position: relative
+	height: 1242px
+.advantages__foil
+	position: absolute
+	background-color: rgba(0, 0, 0, .6)
+	width: 100%
+	height: 1242px
+.advantages__info-block
+	position: absolute
+	width: 100%
+	height: 100%
+	display: flex
+	align-items: center
+.advantages__title
+	line-height: 1.23
+.advantages__sub-title
+	color: #fff
+	font-family: 'Montserrat', sans-serif
+	font-weight: 200
+	text-align: center
+	margin-top: 26px
+	padding:
+		right: 15px
+		left: 15px
+.advantages__item
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-bottom: 40px
+.advantages__img
+	width: 100px
+	height: 100px
+.advantages__item-title
+	line-height: 1.35
+	font-weight: 600
+	padding:
+		top: 20px
+		bottom: 18px
+.advantages__item-description
+	color: #fff
+	line-height: 1.55
+	font-size: 12px
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200
+	text-align: center
+	padding:
+		right: 15px
+		left: 15px
+.advantages__info-block .row
+	margin-top: 70px
+@media screen and (max-width: 576px)
+	.advantages__title
+		font-size: 30px
+	.advantages__sub-title
+		font-size: 16px
+		line-height: 1.45
+	.advantages__item-title
+		font-size: 16px
+@media screen and (min-width: 576px)
+	.advantages__title
+		font-size: 48px
+	.advantages__sub-title
+		font-size: 20px
+		line-height: 1.55
+	.advantages__item-title
+		font-size: 18px
+
+
+
+
+
+
+
 
 /* fotos style */
 
