@@ -1,0 +1,381 @@
+@charset "UTF-8";
+/* шрифты */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap&subset=cyrillic");
+/* simple style */
+.work-area {
+  width: 100%;
+  height: 100%; }
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: center;
+  padding: 24px 0px 24px 0px; }
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 600;
+  color: #000; }
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  padding: 15px 0 30px 0;
+  line-height: 1.55;
+  text-align: center; }
+
+p, span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.55;
+  font-size: 12px; }
+
+.container-fluid.no-gutters {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+/* header style */
+.header__background {
+  height: 812px;
+  background-image: url(../images/5ca1106634e32503f358.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative; }
+
+.header__foil {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)); }
+
+.header__info-block {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  margin: 0 auto; }
+
+.header__manage {
+  display: block;
+  text-align: center;
+  margin-top: 45px; }
+
+.header__link-excursions, .header__link-test, .test-block__link {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff6600;
+  border-radius: 30px;
+  border: 1px solid #ff6600;
+  text-decoration: none;
+  padding: 0px 30px;
+  white-space: normal;
+  font-family: 'Montserrat', sans-serif;
+  height: 60px;
+  line-height: 58px;
+  font-weight: 700;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 7px 3px; }
+
+.header__link-test {
+  border: 1px solid #fff;
+  color: #000;
+  background-color: #fff; }
+
+@media screen and (max-width: 576px) {
+  .header__background {
+    height: 812px; }
+  .main-title {
+    font-size: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500; }
+  .sub-title {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    line-height: 20px; }
+  .header__info-block {
+    top: 25%; }
+  .header__link-excursions, .header__link-test {
+    padding: 0px 30px; } }
+
+@media screen and (min-width: 576px) {
+  .header__background {
+    height: 100vh; }
+  .main-title {
+    font-size: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .sub-title {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    line-height: 20px; }
+  .header__info-block {
+    top: 11%; }
+  .header__link-excursions, .header__link-test {
+    padding: 0px 30px; } }
+
+@media screen and (min-width: 768px) {
+  .header__background {
+    height: 780px;
+    min-height: 680px; }
+  .main-title {
+    font-size: 68px;
+    line-height: 1.17;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-weight: 500; }
+  .sub-title {
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 200;
+    padding-left: 50px;
+    padding-right: 50px; }
+  .header__info-block {
+    top: 10%; }
+  .header__link-excursions, .header__link-test {
+    padding: 0px 60px; } }
+
+@media screen and (min-width: 992px) {
+  .header__background {
+    height: 780px;
+    min-height: 680px; }
+  .header__info-block {
+    top: 35%; }
+  .main-title {
+    padding-left: 10%;
+    padding-right: 10%; } }
+
+@media screen and (min-width: 1200px) {
+  .header__info-block {
+    top: 25%; }
+  .main-title {
+    font-size: 72px; }
+  .sub-title {
+    font-size: 22px; } }
+
+/* list-excursions style */
+.list-excursions {
+  width: 100%;
+  background-color: #efefef; }
+
+.variants__item {
+  margin-bottom: 20px; }
+
+.variants__item-wrap {
+  background-color: #fff;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.variants__item-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.variants__item-info {
+  padding: 27px 30px 0px 30px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0; }
+
+.about-price {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  font-size: 10px;
+  color: #ff8562; }
+
+.item-info__price {
+  margin-bottom: 8px; }
+
+.old-price {
+  text-decoration: line-through; }
+
+.item-info__title {
+  margin-bottom: 8px; }
+
+.item-info__description {
+  margin-bottom: 15px; }
+
+.item-info__buttoms {
+  padding: 21px 30px 27px; }
+
+.item-info__buttom {
+  color: #ffffff;
+  background-color: #1f5bff;
+  border-radius: 5px;
+  border: 1px solid #1f5bff;
+  text-decoration: none;
+  margin: 0 4px 8px 0;
+  display: inline-block;
+  line-height: 1;
+  height: 35px;
+  line-height: 33px;
+  font-size: 13px;
+  padding-left: 15px;
+  padding-right: 15px;
+  white-space: normal;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 700; }
+
+.item-info__to-book {
+  color: #000;
+  background-color: #ffd02b;
+  border: 1px solid #ffd02b; }
+
+.test-block__title {
+  color: #000;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.23;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.test-block__sub-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #000000;
+  max-width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.test-block__link {
+  color: #fff;
+  background-color: #1f5bff;
+  border: 1px solid #1f5bff;
+  border-radius: 100px;
+  font-size: 16px;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-transform: none;
+  max-width: 300px;
+  text-align: center; }
+
+.test-block__start-test {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.test-block__arrow {
+  color: #c9c9c9;
+  fill: #c9c9c9;
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
+@media screen and (max-width: 320px) {
+  .list-excursions__variants {
+    padding-top: 90px;
+    padding-bottom: 90px; }
+  .variants__item-img {
+    height: 233px;
+    min-height: auto;
+    max-height: auto; }
+  .list-excursions__test-block {
+    padding-bottom: 90px; } }
+
+@media screen and (min-width: 320px) {
+  .list-excursions__variants {
+    padding-top: 90px;
+    padding-bottom: 90px; }
+  .variants__item-img {
+    height: auto;
+    min-height: 233px;
+    max-height: 358px; }
+  .list-excursions__test-block {
+    padding-bottom: 90px; } }
+
+@media screen and (min-width: 480px) {
+  .list-excursions__variants {
+    padding-top: 135px;
+    padding-bottom: 135px; }
+  .list-excursions .row .col-sm-6 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%; }
+  .variants__item-img {
+    height: auto;
+    min-height: 175px;
+    max-height: 175px; }
+  .list-excursions__test-block {
+    padding-bottom: 135px; } }
+
+@media screen and (min-width: 500px) {
+  .variants__item-img {
+    height: auto;
+    min-height: 183px;
+    max-height: 183px; } }
+
+@media screen and (min-width: 520px) {
+  .variants__item-img {
+    height: auto;
+    min-height: 191px;
+    max-height: 191px; } }
+
+@media screen and (min-width: 576px) {
+  .variants__item-img {
+    height: auto;
+    min-height: 215px;
+    max-height: 215px; } }
+
+@media screen and (min-width: 768px) {
+  .variants__item-img {
+    height: auto;
+    min-height: 233px;
+    max-height: 233px; } }
+
+@media screen and (min-width: 992px) {
+  .variants__item-img {
+    height: auto;
+    min-height: 250px;
+    max-height: 300px; } }
+
+/* advantages style */
+/* fotos style */
+/* questions style */
+/* footer style */
