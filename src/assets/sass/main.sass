@@ -524,6 +524,10 @@ p, span
 	padding:
 		top: 0px
 		bottom: 0px
+	margin:
+		left: auto
+		right: auto
+	max-width: 620px
 .questions__sub-title
 	line-height: 1.4
 	padding:
@@ -536,7 +540,7 @@ p, span
 	max-width: 600px
 .form-block__form, .questions__list-messages
 	display: flex
-	max-width: 670px
+	max-width: 600px
 	margin-left: auto
 	margin-right: auto
 .form-block__field
@@ -606,8 +610,8 @@ p, span
 		flex-direction: column
 	.form-block__field
 		margin-top: auto
-		margin-bottom: auto
-		padding-right: 20px
+		margin-bottom: 20px
+		padding-right: 0px
 	.form-block__btn
 		display: inline-block
 		padding-right: 40px
@@ -615,6 +619,75 @@ p, span
 @media screen and (min-width: 992px)
 	.form-block__form
 		flex-direction: row
+	.form-block__field
+		margin-top: auto
+		margin-bottom: auto
+		padding-right: 20px
+
+/* footer style */
+.footer
+	background-color: #fff
+.footer .row
+	flex-direction: column
+.footer__logo
+	display: flex
+	justify-content: center
+	margin-bottom: 40px
+.logo-img
+	max-width: 200px
+.footer__contact-information
+	margin-left: auto
+	margin-right: auto
+.contact-information__title, .contact-information__sub-title, a.contact-information__sub-title
+	font-weight: 700
+	color: #000
+	line-height: 1.45
+	font-family: 'Open Sans'
+	text-align: center
+a.contact-information__sub-title
+	display: block
+.contact-information__sub-title, a.contact-information__sub-title
+	text-decoration: none
+	font-weight: 400
+	margin-bottom: 20px
+.footer__soc-block
+	margin-top: 40px
+.soc-block__wrapper
+	text-decoration: none
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 30px
+	height: 30px
+	background-color: #000
+	border-radius: 50%
+	margin: 0 auto
+.soc-block__icon
+	color: #fff
+	fill: #fff
+	width: 75%
+	height: 75%
+@media screen and (max-width: 576px)
+	.footer
+		padding:
+			top: 90px
+			bottom: 90px
+	.contact-information__title, .contact-information__sub-title
+		font-size: 16px
+@media screen and (min-width: 576px)
+	.footer
+		padding:
+			top: 135px
+			bottom: 135px
+	.contact-information__title, .contact-information__sub-title
+		font-size: 18px
 
 
-/* footer style 
+
+
+
+
+
+
+
+
