@@ -705,6 +705,12 @@ a.contact-information__sub-title
 	background-color: #fff
 	position: relative
 	margin: auto
+	opacity: 0
+	transform: translateY(30%) scale(.9)
+	transition: transform .3s ease-in-out
+.modal__container.movie
+	opacity: 1
+	transform: translateY(0%)
 .modal__close-btn
 	position: absolute
 	top: 10px
@@ -997,6 +1003,65 @@ input[type=date].date::-webkit-calendar-picker-indicator
 		width: 30px
 		height: 30px
 
+/* quiz */
+.quiz-tab__title
+	color: #000
+	text-align: left
+	line-height: 1.2
+	font-weight: 
+/* quiz radio */
+.quiz-tab__question-name
+	display: flex
+	flex-wrap: nowrap
+	justify-content: flex-start
+	align-self: center
+	cursor: pointer
+	position: relative
+	padding: 13px 16px
+	width: 100%
+	border: 1px solid rgba(217,216,230,.5)
+	border-radius: 5px
+	margin-bottom: 15px
+.quiz-tab__question-radio
+	// display: none
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	width: 18px
+	height: 18px
+	border-radius: 50%
+	border: 2px solid #e8e8e8
+	background-color: #e8e8e8
+	outline: none
+	transition: 0.3s all linear
+.quiz-tab__question-radio:checked
+	border: 3px solid #d34085
+.quiz-tab__question-name .check:before
+	opacity: 0
+.quiz-tab__question-radio:checked + .check:before
+	content: ''
+	display: inline-block
+	opacity: 1
+	position: absolute
+	top: calc(50% -  3px)
+	left: calc(16px + 6px)
+	width: 6px
+	height: 6px
+	border-radius: 50%
+	border: 1px solid #d34085
+	background-color: #d34085
+	transition: 0.3s all linear
+.quiz-tab__question-value
+	line-height: 1.5
+	color: #000
+	padding-left: 15px
+/* /quiz radio */
+@media screen and (max-width: 576px)
+	.quiz-tab__title
+		font-size: 22px
+@media screen and (min-width: 576px)
+	.quiz-tab__title
+		font-size: 28px
 
 
 
